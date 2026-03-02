@@ -2,7 +2,9 @@ import React from 'react'
 
 function prueba() {
   return (
-    <div>prueba</div>
+    <div>prueba
+        <h4>prueba</h4>
+    </div>
   )
 }
 
