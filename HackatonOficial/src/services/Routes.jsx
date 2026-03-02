@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "../Pages/Inicio";
 import Registro from "../Pages/Login/Registro"; // Importar el nuevo componente
-import Login from "../Pages/Registro-Division/Login";
+import Login from "../Pages/Registro-Division/Login.jsx";
 import Empleados from "../Pages/Registro-Division/Empleados";
 import Administrativo from "../Pages/Registro-Division/Administrativo";
 import Empresas from "../Pages/Registro-Division/Empresas";
@@ -27,5 +27,3 @@ function Routing() {
 }
 
 export default Routing;
-
-              

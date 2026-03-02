@@ -13,6 +13,9 @@ function Administrativo() {
         <label htmlFor="password">Contraseña:</label>
         <input className="PasswordAdministrativo" type="password" id="PasswordAdministrativo" name="PasswordAdministrativo" />
         <br />
+        <label htmlFor="token">Token:</label>
+        <input className="TokenAdministrativo" type="text" id="TokenAdministrativo" name="TokenAdministrativo" />
+        <br />
         <label htmlFor="confirmarcontraseña">Confirmar Contraseña:</label>
         <input className="ConfirmarPasswordAdministrativo" type="password" id="ConfirmarPasswordAdministrativo" name="ConfirmarPasswordAdministrativo" />
         <br />
