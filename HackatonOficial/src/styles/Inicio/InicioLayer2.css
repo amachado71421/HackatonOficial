@@ -1,0 +1,125 @@
+/* =========================
+   VARIABLES DE DISEÑO
+========================= */
+:root {
+  --layer2-bg: #0f0f19;
+  --layer2-card-bg: rgba(255, 255, 255, 0.02);
+  --layer2-primary: #033835;
+  --layer2-text: #ffffff;
+  --layer2-text-muted: #cbd5e1;
+  --layer2-border: rgba(255, 255, 255, 0.06);
+  --layer2-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+.inicio-layer2-container {
+  width: 100%;
+  background: var(--layer2-bg);
+  color: var(--layer2-text);
+  padding: 90px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", "Poppins", sans-serif;
+}
+
+.inicio-layer2-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* =========================
+   TÍTULO
+========================= */
+.inicio-layer2-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 60px;
+  line-height: 1.2;
+}
+
+/* =========================
+   GRID
+========================= */
+.inicio-layer2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+.inicio-layer2-card {
+  background: var(--layer2-card-bg);
+  border: 1px solid var(--layer2-border);
+  border-radius: 16px;
+  padding: 30px 25px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.inicio-layer2-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--layer2-shadow);
+  border-color: rgba(3, 56, 53, 0.4);
+}
+
+/* =========================
+   ICONO
+========================= */
+.inicio-layer2-icon {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: var(--layer2-primary);
+}
+
+/* =========================
+   TITULO TARJETA
+========================= */
+.inicio-layer2-card-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   TEXTO TARJETA
+========================= */
+.inicio-layer2-card-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--layer2-text-muted);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  .inicio-layer2-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inicio-layer2-container {
+    padding: 70px 20px;
+  }
+
+  .inicio-layer2-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .inicio-layer2-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inicio-layer2-card {
+    padding: 25px 20px;
+  }
+}
