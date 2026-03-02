@@ -1,0 +1,119 @@
+/* Reutilizamos las mismas variables */
+:root {
+  --bg-dark: #1A1635;
+  --card-purple: #241D49;
+  --primary-violet: #5E35B1;
+  --input-gray: #E0E0E0;
+  --text-white: #FFFFFF;
+  --text-muted: #8E8E8E;
+  --footer-light: #F5F5F5;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+}
+
+.login-card {
+  background-color: var(--card-purple);
+  width: 100%;
+  max-width: 340px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding-top: 40px;
+}
+
+.login-title {
+  color: var(--text-white);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 30px; /* Un poco menos de margen para dar espacio a los campos */
+}
+
+.login-form {
+  padding: 0 30px;
+}
+
+.form-group {
+  margin-bottom: 15px; /* Reducido de 18px para que quepan 4 inputs */
+  text-align: left;
+}
+
+.pill-input {
+  width: 100%;
+  height: 48px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--input-gray);
+  font-size: 0.95rem;
+  color: #333;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.pill-input::placeholder {
+  color: var(--text-muted);
+}
+
+.btn-primary-pill {
+  width: 85%;
+  height: 45px;
+  background-color: var(--primary-violet);
+  color: var(--text-white);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 15px 0 50px 0; /* Ajustado para el diseño de registro */
+  transition: background 0.3s ease;
+}
+
+.btn-primary-pill:hover {
+  background-color: #4d2a91;
+}
+
+.footer-text {
+  position: relative;
+  background-color: var(--footer-light);
+  margin: 0;
+  padding: 20px 0;
+  color: var(--primary-violet);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.footer-text-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-text::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--footer-light);
+  border-radius: 50% 50% 0 0;
+  z-index: 1;
+}
+
+.link-text {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link-text:hover {
+  text-decoration: underline;
+}
