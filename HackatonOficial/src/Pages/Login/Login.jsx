@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Login.css';
+import '../../styles/Login.css';
 import api from '../services/fech'; // 1. Importar nuestro servicio de API
 
 const Login = () => {
