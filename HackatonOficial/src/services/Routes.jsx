@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Inicio from "../Pages/Inicio";
 import Login from "../Pages/Login/Login";
 import Registro from "../Pages/Login/Registro"; // Importar el nuevo componente
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
