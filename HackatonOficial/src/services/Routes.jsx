@@ -8,7 +8,7 @@ function Routing() {
         <Router>
             <Routes>
                 <Route path="/" element={<Inicio/>} />
-                <Route path="/login" element={<Login/>} />
+                <Route path="/Login" element={<Login/>} />
                 <Route path="/registro" element={<Registro/>} /> {/* Añadir la nueva ruta */}
             </Routes>
         </Router>
