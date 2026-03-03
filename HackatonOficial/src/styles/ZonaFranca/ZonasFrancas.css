@@ -1,0 +1,75 @@
+/* Layout principal estilo web */
+.zfs-main-layout {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", "Poppins", sans-serif;
+}
+
+/* Header superior ancho completo */
+.zfs-header-bar {
+  padding: 25px 60px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Área de búsqueda centrada */
+.zfs-search-area {
+  padding: 30px 60px;
+  background: #f9fafb;
+  display: flex;
+  justify-content: center;
+}
+
+.zfs-search-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.zfs-search-input:focus {
+  border-color: #033835;
+  box-shadow: 0 0 0 3px rgba(3, 56, 53, 0.15);
+}
+
+/* Contenido en grid horizontal */
+.zfs-content-scroll {
+  flex: 1;
+  padding: 40px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Footer tipo barra web */
+.zfs-footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 20px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.zfs-footer-item {
+  font-size: 0.95rem;
+  color: #6b7280;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.zfs-footer-item:hover {
+  color: #033835;
+}

@@ -34,10 +34,10 @@ const BarraNav = () => {
         {/* Botones */}
         <div className="barranav-seccion-botones">
           <a 
-            href="/publicar" 
-            className="barranav-boton-publicar"
+            href="/zonas-francas"
+            className="barranav-boton-zonas-francas"
           >
-            Publicar Vacante
+            Zonas Francas
           </a>
 
           <a 
