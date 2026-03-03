@@ -1,0 +1,101 @@
+/* Contenedor principal */
+.barranav-contenedor-principal {
+  width: 100%;
+  background-color: #033835;
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Segoe UI", "Poppins", sans-serif;
+}
+
+/* Contenedor interno */
+.barranav-contenedor-interno {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.barranav-seccion-logo {
+  display: flex;
+  align-items: center;
+}
+
+.barranav-imagen-logo {
+  height: 55px;
+  cursor: pointer;
+}
+
+/* Lista enlaces */
+.barranav-lista-enlaces {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.barranav-item-enlace {
+  display: flex;
+}
+
+.barranav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.barranav-link:hover {
+  color: #f4d19b;
+}
+
+/* Botones */
+.barranav-seccion-botones {
+  display: flex;
+  gap: 18px;
+}
+
+.barranav-boton-publicar {
+  background-color: #f4d19b;
+  color: #0f3d3e;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.barranav-boton-publicar:hover {
+  background-color: #e6be80;
+}
+
+.barranav-boton-iniciar {
+  border: 2px solid #f4d19b;
+  color: #f4d19b;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.barranav-boton-iniciar:hover {
+  background-color: #f4d19b;
+  color: #0f3d3e;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .barranav-lista-enlaces {
+    display: none;
+  }
+
+  .barranav-seccion-botones {
+    display: none;
+  }
+}
