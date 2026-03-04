@@ -1,82 +1,87 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../../styles/Login.css';
-import api from '../../services/fech.js'; // 1. Importar nuestro servicio de API
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "../../styles/Login.css";
+import api from "../../services/fech.js";
 
 const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(''); // Limpiar errores previos
+    setError("");
 
-    // 2. Usar async/await y try/catch para manejar la petición
     try {
-      // 3. Hacer la petición POST a la ruta /login del backend
-      const response = await api.post('/login', { 
-        email: email, 
-        password: password 
+      const response = await api.post("/Login", {
+        email,
+        password,
       });
 
-      // 4. Si la petición es exitosa...
-      console.log('Respuesta del servidor:', response.data);
-      // Aquí guardarías el token, redirigirías al usuario, etc.
-      // Por ejemplo: localStorage.setItem('token', response.data.token);
+      if (response.data.token) {
+        localStorage.setItem("token", response.data.token);
+      }
 
+      navigate("/");
     } catch (err) {
-      // 5. Si hay un error...
-      console.error('Error en el inicio de sesión:', err);
-      setError('Correo o contraseña incorrectos. Por favor, inténtalo de nuevo.');
+      setError("Correo o contraseña incorrectos.");
     }
   };
 
   return (
-    <div className="login-container">
-      <div className="login-card">
-        <h1 className="login-title">Iniciar Sesión</h1>
-        
-        {error && <p style={{ color: 'red' }}>{error}</p>}
+    <div className="login-wrapper">
+      <div className="login-container">
 
-        <form onSubmit={handleSubmit} className="login-form">
-          <div className="form-group">
-            <label className="input-label">Correo o ID</label>
-            <input 
-              type="text" 
-              className="pill-input" 
-              placeholder="Escribe tu correo o ID" 
+        {/* Panel Izquierdo */}
+        <div className="login-left">
+          <span className="login-brand">Zona Franca Empleos</span>
+
+          <h1 className="login-title">
+            Inicia sesión<br />en tu cuenta
+          </h1>
+
+          {error && <p className="login-error">{error}</p>}
+
+          <form className="login-form" onSubmit={handleSubmit}>
+            <input
+              type="email"
+              placeholder="Correo electrónico"
+              className="login-input"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required 
+              required
             />
-          </div>
 
-          <div className="form-group">
-            <label className="input-label">Contraseña</label>
-            <input 
-              type="password" 
-              className="pill-input" 
-              placeholder="Escribe tu contraseña" 
+            <input
+              type="password"
+              placeholder="Contraseña"
+              className="login-input"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              required 
+              required
             />
-          </div>
 
-          <button type="submit" className="btn-primary-pill">
-            INICIAR SESIÓN
-          </button>
-        </form>
+            <button type="submit" className="login-button">
+              INICIAR SESIÓN
+            </button>
+          </form>
 
-        <div className="footer-text">
-          <span className="footer-text-content">
-            ¿No tienes cuenta?{' '}
-            <Link to="/registro" className="link-text">
-              regístrate
+          <p className="login-footer">
+            ¿No tienes cuenta?{" "}
+            <Link to="/seleccion-usuarios" className="login-link">
+              Regístrate
             </Link>
-          </span>
+          </p>
         </div>
+
+        {/* Panel Derecho */}
+        <div className="login-right">
+          <div className="image-overlay-card top-card">
+          </div>
+        </div>
+
       </div>
     </div>
   );
