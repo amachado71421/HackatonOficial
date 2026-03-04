@@ -98,9 +98,7 @@
 /* Contenido en grid horizontal */
 /* ============================= */
 .zfs-content-scroll {
-  flex: 1;
-  padding: 40px 60px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px;
+  overflow-x: auto;
+  padding: 20px 60px;
+ 
 }

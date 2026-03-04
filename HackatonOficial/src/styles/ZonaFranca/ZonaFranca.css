@@ -2,12 +2,16 @@
 /* CARD CONTENEDOR FULL WIDTH */
 /* ============================= */
 .zf-card-container {
+    display: flex;
+    flex-direction: column;
   width: 100%;
   background: #ffffff;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
+  margin-top: 10px;
+
 }
 
 /* Hover suave */
@@ -70,3 +74,4 @@
   font-size: 0.85rem;
   font-weight: 500;
 }
+
