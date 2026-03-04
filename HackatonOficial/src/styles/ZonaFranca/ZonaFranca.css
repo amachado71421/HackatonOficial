@@ -1,53 +1,77 @@
-
+/* ============================= */
+/* CARD CONTENEDOR FULL WIDTH */
+/* ============================= */
 .zf-card-container {
+    display: flex;
+    flex-direction: column;
   width: 100%;
   background: #ffffff;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: 0.3s ease;
-  margin-bottom: 40px; /* 🔥 Espacio entre cards */
+  transition: all 0.3s ease;
+  margin-top: 10px;
+
 }
 
+/* Hover suave */
 .zf-card-container:hover {
   transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
 
-/* Imagen más compacta */
+/* ============================= */
+/* Imagen */
+/* ============================= */
 .zf-card-image-wrapper {
   width: 100%;
-  height: 250px; /* 🔥 Antes 400px */
+  height: 320px; /* Más visual ahora que es full width */
   overflow: hidden;
 }
 
-
-@@ -23,18 +25,19 @@
+.zf-card-image-element {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-/* Contenido más compacto */
+/* ============================= */
+/* Contenido */
+/* ============================= */
 .zf-card-content-area {
-  padding: 20px 30px; /* 🔥 Antes 30px 40px */
+  padding: 30px 40px;
 }
 
+/* Título */
 .zf-card-title-text {
-  font-size: 1.5rem; /* 🔥 Antes 1.8rem */
+  font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  color: #111827;
 }
 
+/* Ubicación */
 .zf-card-location-text {
   font-size: 1rem;
   color: #6b7280;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-@@ -48,8 +51,8 @@
+/* ============================= */
+/* Tags */
+/* ============================= */
+.zf-card-tags-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .zf-card-tag-item {
   background: #e5f3ef;
   color: #033835;
-  padding: 6px 14px; /* 🔥 Más compactos */
+  padding: 8px 16px;
   border-radius: 25px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 500;
 }
+

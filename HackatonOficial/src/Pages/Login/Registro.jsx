@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import '../../styles/Registro.css';
+import "../../styles/Registro.css";
+
 
 const Register = () => {
   const [userType, setUserType] = useState('aspirante'); // Estado para guardar el rol
