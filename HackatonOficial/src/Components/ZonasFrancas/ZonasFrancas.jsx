@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "../../styles/ZonaFranca/ZonasFrancas.css";
 import ConjuntoZFE from "./ConjuntoZFE.jsx";
 import BarraNav from "../BarraNav.jsx";
-
+import '../../styles/ZonaFranca/ZonasFrancas.css';
 const ZonasFrancas = () => {
 
   // Estado del input (lo que escribes)
