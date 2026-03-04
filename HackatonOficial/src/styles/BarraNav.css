@@ -1,0 +1,161 @@
+/* Contenedor principal */
+.barranav-contenedor-principal {
+  width: 100%;
+  height: 80px;
+
+  /* Degradado horizontal suave tipo dashboard */
+  background: linear-gradient(
+    90deg,
+    #0d3f3c 0%,
+    #0a3533 40%,
+    #072b2a 75%,
+    #051f1e 100%
+  );
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  font-family: "Segoe UI", "Poppins", sans-serif;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  display: flex;
+  align-items: center;
+}
+.TituloLogo {
+  color: #f4d19b;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 15px;
+  
+}
+
+/* Contenedor interno */
+.barranav-contenedor-interno {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.barranav-seccion-logo {
+  display: flex;
+  align-items: center;
+}
+
+.barranav-imagen-logo {
+  height: 55px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.barranav-imagen-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Lista enlaces */
+.barranav-lista-enlaces {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Cada item */
+.barranav-item-enlace {
+  position: relative;
+}
+
+/* Links */
+.barranav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  padding: 8px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Línea animada elegante */
+.barranav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background-color: #f4d19b;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* Hover moderno */
+.barranav-link:hover {
+  color: #f4d19b;
+}
+
+.barranav-link:hover::after {
+  width: 100%;
+}
+
+/* Botones */
+.barranav-seccion-botones {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.barranav-boton-zonas-francas{
+  background-color: #f4d19b;
+  color: #0f3d3e;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.barranav-boton-zonas-francas:hover {
+  background-color: #e6be80;
+  transform: translateY(-2px);
+}
+
+.barranav-boton-iniciar {
+  border: 2px solid #f4d19b;
+  color: #f4d19b;
+  padding: 8px 18px;
+  border-radius: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.barranav-boton-iniciar:hover {
+  background-color: #f4d19b;
+  color: #0f3d3e;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .barranav-lista-enlaces {
+    display: none;
+  }
+
+  .barranav-seccion-botones {
+    display: none;
+  }
+}

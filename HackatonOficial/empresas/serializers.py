@@ -40,3 +40,10 @@ class EmpresaSerializer(serializers.ModelSerializer):
         password = validated_data.pop('password')
         validated_data['password'] = make_password(password)
         return super().create(validated_data)
+    
+    def update(self, instance, validated_data):
+        """Actualizar empresa con contraseña hasheada si se proporciona."""
+        password = validated_data.pop('password', None)
+        if password:
+            validated_data['password'] = make_password(password)
+        return super().update(instance, validated_data)

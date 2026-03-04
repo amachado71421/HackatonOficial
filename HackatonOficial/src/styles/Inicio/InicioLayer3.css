@@ -1,0 +1,129 @@
+/* ===============================
+   VARIABLES
+================================= */
+:root {
+  --layer3-bg: linear-gradient(90deg, #111827, #1f2937);
+  --layer3-card-bg: #1b1f3a;
+  --layer3-primary: #3b82f6;
+  --layer3-text: #ffffff;
+  --layer3-text-muted: #d1d5db;
+  --layer3-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* ===============================
+   CONTENEDOR
+================================= */
+.inicio-layer3-container {
+  width: 100%;
+  background: var(--layer3-bg);
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", "Poppins", sans-serif;
+}
+
+.inicio-layer3-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* ===============================
+   TITULO
+================================= */
+.inicio-layer3-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--layer3-text);
+  margin-bottom: 60px;
+  letter-spacing: -0.5px;
+}
+
+/* ===============================
+   GRID
+================================= */
+.inicio-layer3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+/* ===============================
+   CARD
+================================= */
+.inicio-layer3-card {
+  background: var(--layer3-card-bg);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  box-shadow: var(--layer3-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.inicio-layer3-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ===============================
+   IMAGEN
+================================= */
+.inicio-layer3-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.inicio-layer3-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.inicio-layer3-card:hover .inicio-layer3-image {
+  transform: scale(1.08);
+}
+
+/* ===============================
+   CARD BODY
+================================= */
+.inicio-layer3-card-body {
+  padding: 25px;
+}
+
+.inicio-layer3-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--layer3-text);
+  margin-bottom: 15px;
+}
+
+.inicio-layer3-card-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--layer3-text-muted);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 1024px) {
+  .inicio-layer3-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .inicio-layer3-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .inicio-layer3-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inicio-layer3-container {
+    padding: 70px 20px;
+  }
+}

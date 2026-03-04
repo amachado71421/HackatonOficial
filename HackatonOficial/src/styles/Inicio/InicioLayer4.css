@@ -1,0 +1,123 @@
+/* ===============================
+   VARIABLES
+================================= */
+:root {
+  --layer4-bg: linear-gradient(90deg, #0f172a, #1e293b);
+  --layer4-card-bg: #1e293b;
+  --layer4-primary: #0ea5e9;
+  --layer4-text: #ffffff;
+  --layer4-text-muted: #cbd5e1;
+  --layer4-border: rgba(255, 255, 255, 0.06);
+  --layer4-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* ===============================
+   CONTENEDOR
+================================= */
+.layerinicio4-container {
+  width: 100%;
+  padding: 100px 20px;
+  background: var(--layer4-bg);
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", "Poppins", sans-serif;
+}
+
+.layerinicio4-content {
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* ===============================
+   TITULO
+================================= */
+.layerinicio4-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--layer4-text);
+  margin-bottom: 70px;
+  line-height: 1.2;
+  font-family: "Segoe UI", "Poppins", sans-serif;
+}
+
+/* ===============================
+   PASOS
+================================= */
+.layerinicio4-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ===============================
+   CARD PASO
+================================= */
+.layerinicio4-step-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  background: var(--layer4-card-bg);
+  border-radius: 18px;
+  padding: 30px;
+  border: 1px solid var(--layer4-border);
+  box-shadow: var(--layer4-shadow);
+  transition: all 0.3s ease;
+}
+
+.layerinicio4-step-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--layer4-primary);
+}
+
+/* ===============================
+   NUMERO
+================================= */
+.layerinicio4-step-number {
+  min-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--layer4-primary);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ===============================
+   TEXTO
+================================= */
+.layerinicio4-step-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--layer4-text);
+}
+
+.layerinicio4-step-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--layer4-text-muted);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+  .layerinicio4-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .layerinicio4-step-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .layerinicio4-step-number {
+    margin-bottom: 15px;
+  }
+}
