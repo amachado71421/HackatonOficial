@@ -1,0 +1,58 @@
+.zf-card-container {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  margin-bottom: 40px; /* 🔥 Espacio entre cards */
+}
+
+.zf-card-container:hover {
+  transform: translateY(-6px);
+}
+
+/* Imagen más compacta */
+.zf-card-image-wrapper {
+  width: 100%;
+  height: 250px; /* 🔥 Antes 400px */
+  overflow: hidden;
+}
+
+.zf-card-image-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contenido más compacto */
+.zf-card-content-area {
+  padding: 20px 30px; /* 🔥 Antes 30px 40px */
+}
+
+.zf-card-title-text {
+  font-size: 1.5rem; /* 🔥 Antes 1.8rem */
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.zf-card-location-text {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 15px;
+}
+
+.zf-card-tags-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.zf-card-tag-item {
+  background: #e5f3ef;
+  color: #033835;
+  padding: 6px 14px; /* 🔥 Más compactos */
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}

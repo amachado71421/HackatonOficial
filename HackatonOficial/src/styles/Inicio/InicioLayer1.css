@@ -86,8 +86,8 @@ html, body {
 /* Botón secundario */
 .inicio-layer1-btn-secondary {
   background: transparent;
-  border: 2px solid #033835;
-  color: #065c58;
+  border: 2px solid #f4d19b;
+  color: #f4d19b;
   padding: 12px 26px;
   border-radius: 10px;
   font-size: 1rem;

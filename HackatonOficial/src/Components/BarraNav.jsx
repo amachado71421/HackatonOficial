@@ -14,7 +14,9 @@ const BarraNav = () => {
             className="barranav-imagen-logo"
           />
         </div>
-
+        <div>
+          <h1 className="TituloLogo">Zona Franca Empleos</h1>
+        </div>
         {/* Enlaces */}
         <ul className="barranav-lista-enlaces">
           <li className="barranav-item-enlace">
@@ -34,10 +36,10 @@ const BarraNav = () => {
         {/* Botones */}
         <div className="barranav-seccion-botones">
           <a 
-            href="/publicar" 
-            className="barranav-boton-publicar"
+            href="/zonas-francas"
+            className="barranav-boton-zonas-francas"
           >
-            Publicar Vacante
+            Zonas Francas
           </a>
 
           <a 
