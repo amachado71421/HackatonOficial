@@ -20,6 +20,7 @@
   background: var(--layer4-bg);
   display: flex;
   justify-content: center;
+  font-family: "Segoe UI", "Poppins", sans-serif;
 }
 
 .layerinicio4-content {
@@ -36,6 +37,7 @@
   color: var(--layer4-text);
   margin-bottom: 70px;
   line-height: 1.2;
+  font-family: "Segoe UI", "Poppins", sans-serif;
 }
 
 /* ===============================

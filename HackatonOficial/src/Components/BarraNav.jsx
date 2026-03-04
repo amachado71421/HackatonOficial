@@ -14,7 +14,9 @@ const BarraNav = () => {
             className="barranav-imagen-logo"
           />
         </div>
-
+        <div>
+          <h1 className="TituloLogo">Zona Franca Empleos</h1>
+        </div>
         {/* Enlaces */}
         <ul className="barranav-lista-enlaces">
           <li className="barranav-item-enlace">

@@ -17,7 +17,7 @@ const LayerInicio4 = () => {
             <div className="layerinicio4-step-body">
               <h3 className="layerinicio4-step-title">Accede al portal</h3>
               <p className="layerinicio4-step-text">
-                Ingresa a www.trabajaenzonafrancabogota.com y selecciona 
+                Ingresa a www.zonafrancaempleo.com y selecciona 
                 "QUIERO POSTULARME".
               </p>
             </div>
