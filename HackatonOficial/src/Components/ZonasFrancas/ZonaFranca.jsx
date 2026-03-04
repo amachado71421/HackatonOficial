@@ -1,12 +1,24 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../../styles/ZonaFranca/ZonaFranca.css";
 
 const ZonaFranca = ({ datosZona }) => {
+
+  const navigate = useNavigate();
+
+  const irADetalle = () => {
+    if (datosZona.nombre === "La Lima Free Zone") {
+      navigate("/zonas-EmpresaLima");
+    }
+  };
+
   return (
     <div
       className="zf-card-container"
       id={`zf-card-id-${datosZona.id}`}
       name={`zf-card-name-${datosZona.nombre}`}
+      onClick={irADetalle}
+      style={{ cursor: "pointer" }}
     >
       <div className="zf-card-image-wrapper">
         <img
