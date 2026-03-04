@@ -7,8 +7,13 @@ function Institution() {
         <label htmlFor="nombre">Nombre de la Institución:</label>
         <input className="NombreInstitucion" type="text" id="NombreInstitucion" name="NombreInstitucion" />
         <br />
-        <label htmlFor="tipo">Tipo de Institución (Colegio, Universidad, Técnico):</label>
-        <input className="TipoInstitucion" type="text" id="TipoInstitucion" name="TipoInstitucion" />
+        <label htmlFor="select">Tipo de Institución:</label>
+        <select className="TipoInstitucion" id="TipoInstitucion" name="TipoInstitucion">
+          <option value="">Seleccionar tipo</option>
+          <option value="Colegio">Colegio</option>
+          <option value="Universidad">Universidad</option>
+          <option value="Técnico">Técnico</option>
+        </select>
         <br />
         <label htmlFor="nit">Cédula Jurídica:</label>
         <input className="CedulaJuridicaInstitucion" type="number" id="CedulaJuridicaInstitucion" name="CedulaJuridicaInstitucion" />
